@@ -8,7 +8,7 @@ pip install paho-mqtt
 Trong mỗi file chúng ta có 2 dòng sau:  
 client.connect(mqttBroker) -> connect tới broker của url https://mqtt.eclipseprojects.io/  
 #client.connect("192.168.11.1",1883) -> connect tới broker của router Gl inet AR750. Router này sử dụng hệ điều hành nhúng OpenWrt trên hệ điều hành mở Linux  
-
+Chú thích: [router Gl inet AR750 và openwrt](https://openwrt.org/toh/gl.inet/gl-ar750s), [cách cài MQTT Broker trên OpenWrt](https://www.youtube.com/watch?v=azGaeTgGddo)
 
 # mqtt-pub1  
 Mã này là một ví dụ về việc sử dụng thư viện Paho MQTT để kết nối và gửi dữ liệu tới một broker MQTT.  

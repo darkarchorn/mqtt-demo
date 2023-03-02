@@ -10,6 +10,7 @@ mqttBroker = "mqtt.eclipseprojects.io"
 client = mqtt.Client("Smartphone")
 #ket noi toi broker
 client.connect(mqttBroker)
+#client.connect("192.168.11.1",1883)
 
 client.loop_start()
 client.subscribe("TEMPERATURE")

@@ -7,6 +7,7 @@ mqttBroker = "mqtt.eclipseprojects.io"
 client = mqtt.Client("Temperature_Outside")
 #ket noi toi broker
 client.connect(mqttBroker)
+#client.connect("192.168.11.1",1883)
 
 while True:
     randNumber = randrange(10)

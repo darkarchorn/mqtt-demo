@@ -4,6 +4,12 @@ Chạy lần lượt các lệnh sau vào terminal:
 python -m ensurepip --default-pip  
 pip install paho-mqtt  
 
+# Note  
+Trong mỗi file chúng ta có 2 dòng sau:  
+client.connect(mqttBroker) -> connect tới broker của url https://mqtt.eclipseprojects.io/  
+#client.connect("192.168.11.1",1883) -> connect tới broker của router Gl inet AR750. Router này sử dụng hệ điều hành nhúng OpenWrt trên hệ điều hành mở Linux  
+
+
 # mqtt-pub1  
 Mã này là một ví dụ về việc sử dụng thư viện Paho MQTT để kết nối và gửi dữ liệu tới một broker MQTT.  
 
@@ -20,7 +26,7 @@ Mã này là một ví dụ về việc sử dụng thư viện Paho MQTT để 
  Đoạn mã này có thể được sử dụng để gửi dữ liệu nhiệt độ từ một cảm biến nhiệt độ (hoặc bất kỳ thiết bị nào khác) tới một broker MQTT để lưu trữ hoặc xử lý dữ liệu.  
  
  # mqtt-pub2
- Tương tự như mqtt-pub1, code này dùng để gửi giá trị nguyên ngẫu nhiên từ 1-10 cho nhiệt độ ngoài trời  
+ Tương tự như mqtt-pub1, code này dùng để gửi giá trị nguyên ngẫu nhiên từ 0-9 cho nhiệt độ ngoài trời  
    
 # mqtt-sub
 Mã này là một ví dụ về việc sử dụng thư viện Paho MQTT để kết nối tới một broker MQTT, đăng ký theo dõi một topic, và xử lý dữ liệu khi nhận được tin nhắn từ topic đó.  
